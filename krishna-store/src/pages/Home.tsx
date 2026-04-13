@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+
 import { fetchCatalog } from '@/utils/api';
 import { useTranslation } from '@/hooks/useTranslation';
 import { ProductCard } from '@/components/ProductCard';
