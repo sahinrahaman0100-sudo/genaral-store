@@ -26,3 +26,9 @@
 {
   "include": ["src"]
 }
+
+{
+  "compilerOptions": {
+    "types": ["vite/client"]
+  }
+}
