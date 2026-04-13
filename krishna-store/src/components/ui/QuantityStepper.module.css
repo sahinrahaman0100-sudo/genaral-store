@@ -1,0 +1,44 @@
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--purple-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.sm { height: 30px; }
+.md { height: 36px; }
+
+.btn {
+  background: none;
+  border: none;
+  color: var(--purple-light);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sm .btn { width: 28px; height: 28px; font-size: 16px; }
+.md .btn { width: 36px; height: 36px; }
+
+.btn:hover:not(:disabled) { background: var(--purple-dim); color: var(--purple); }
+.btn:disabled { opacity: 0.35; cursor: not-allowed; }
+
+.count {
+  min-width: 28px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+  user-select: none;
+}
+
+.sm .count { min-width: 22px; font-size: 13px; }
